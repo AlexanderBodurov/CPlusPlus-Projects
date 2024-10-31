@@ -3,7 +3,6 @@ using namespace std;
 
 void printRow(int row)
 {
-    // За всеки ред, принтираме числата от 1 до текущия ред!
     for (int currNum = 1; currNum <= row; currNum++)
     {
         cout << currNum << " ";
@@ -14,7 +13,7 @@ void printRow(int row)
 
 void printUpperTrianglePart(int size)
 {
-    for (int row = 1; row <= size; row++) // Редът на който се намираме!
+    for (int row = 1; row <= size; row++) 
     {
         printRow(row);
     }
@@ -22,7 +21,7 @@ void printUpperTrianglePart(int size)
 
 void printLowerTrianglePart(int size)
 {
-    for (int row = size - 1; row > 0; row--) // В обратен ред!
+    for (int row = size - 1; row > 0; row--) 
     {
         printRow(row);
     }
